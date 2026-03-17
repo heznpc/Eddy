@@ -3,3 +3,16 @@
 
 # Local
 CLAUDE.md
+
+# LaTeX auxiliary
+*.aux
+*.log
+*.out
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# Local acmart class (fetched for local builds)
+paper/latex/acmart.cls
