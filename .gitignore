@@ -21,3 +21,4 @@ TODO.md
 
 # Local acmart class (fetched for local builds)
 paper/latex/acmart.cls
+*.pdf
