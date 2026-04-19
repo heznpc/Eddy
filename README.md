@@ -9,8 +9,20 @@ ADHD's rapid engagement with novel stimuli — conventionally framed as distract
 
 ## Paper
 
-- `paper/latex/main.tex` — Position paper (no experimental results)
-- Target: arXiv preprint (cs.HC) → CHI 2027 Workshop / alt.CHI / ASSETS 2027 Workshop
+- `paper/main.tex` — Position paper (no experimental results)
+
+## Repository Structure
+
+```
+eddy/
+  paper/                      Domain -- manuscript source of truth
+    main.tex
+    figures/
+  experiments/                Application (skeleton; pilots forthcoming)
+  literature/                 Reading notes, gap analysis
+  planning/                   TODO, review, decisions log
+  .github/workflows/          CI: build PDF on push to paper/**
+```
 
 ## Key Claim
 

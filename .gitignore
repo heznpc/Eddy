@@ -20,5 +20,5 @@ TODO.md
 *.synctex.gz
 
 # Local acmart class (fetched for local builds)
-paper/latex/acmart.cls
+**/acmart.cls
 *.pdf
