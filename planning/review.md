@@ -61,23 +61,22 @@ b7651a1 Initial commit: Eddy position paper v1.1                        (~2026-0
 
 ## 3. 고도화 가능 파트
 
-높은 우선순위 (ASSETS 2026 / CHI 2027 직결):
-1. **Pilot study (n=10-20)** — TODO #7. 가장 큰 게이트. ASSETS 2026 마감(6/24) 전까지 약 2.5개월. 본인 + 친구 + Reddit r/ADHD에서 ADHD-C/HI/NT 5-10명씩 모집 → IDE telemetry + TTFCA + foraging task → 통계 분석. *최소한* descriptive stat이라도 제시되면 position paper → empirical paper로 한 단계 점프.
-2. **arXiv endorsement** — 현재 Zenodo만 있고 arXiv 미게시. cs.HC 카테고리 endorsement 필요. 한 사람만 endorse해주면 즉시 등록. 가시성 +5단계.
-3. **E-β1 ADHD 지식 노동자 온라인 설문 (n=100-200)** — Reddit r/ADHD 모집. Pilot 전 *현장 목소리* 확보. 4-6주 작업, IRB exempt 가능. paper §3 background를 *first-hand evidence*로 강화.
-4. **E-β2 Campbell et al. 2024 데이터 재분석** — 49명 ADHD knowledge worker 공개 데이터에 Wolf triadic switching, agent usage pattern, multi-session 신호를 재코딩. *기존 데이터로 즉시 가능한 secondary analysis*. 1쪽짜리 figure로 paper §2 강화.
-5. **Computational psychiatry 관련 정확한 인용** — TODO #5에서 미확인. Neuropsychopharmacology 2025 ADHD computational paper의 정확한 reference 확정.
+높은 우선순위 (논증 완성):
+1. **Pilot study (n=10-20)** — TODO #6. 가장 큰 게이트. 본인 + 친구 + Reddit r/ADHD에서 ADHD-C/HI/NT 5-10명씩 모집 → IDE telemetry + TTFCA + foraging task → 통계 분석. *최소한* descriptive stat이라도 제시되면 position paper → empirical paper로 한 단계 점프.
+2. **E-β1 ADHD 지식 노동자 온라인 설문 (n=100-200)** — Reddit r/ADHD 모집. Pilot 전 *현장 목소리* 확보. 4-6주 작업, IRB exempt 가능. paper §3 background를 *first-hand evidence*로 강화.
+3. **E-β2 Campbell et al. 2024 데이터 재분석** — 49명 ADHD knowledge worker 공개 데이터에 Wolf triadic switching, agent usage pattern, multi-session 신호를 재코딩. *기존 데이터로 즉시 가능한 secondary analysis*. 1쪽짜리 figure로 paper §2 강화.
+4. **Computational psychiatry 관련 정확한 인용** — TODO #7에서 미확인. Neuropsychopharmacology 2025 ADHD computational paper의 정확한 reference 확정.
 
 중간 우선순위:
-6. **2x2 실험의 power analysis** — n=10-20로 어떤 effect size를 detect 가능한가. G*Power 시뮬레이션 1쪽 추가. reviewer가 첫 round에서 짚는 약점.
-7. **Wolf triadic switching preference 사전 설문** — 실제 도구 (Qualtrics 또는 LimeSurvey)로 deploy. survey instrument 자체가 reusable.
-8. **References.bib 분리** — 현재 main.tex 안에 인용 정보가 어떻게 들어가 있는지 불명. 표준 .bib 파일로 분리하면 paper portability 향상.
-9. **CHI 2027 Workshop "Neurodivergent Advantage in AI-Augmented Work" proposal** — TODO #8. workshop 호스팅이 visibility 측면에서 매우 강력. CFP 작성에 1-2주.
+5. **2x2 실험의 power analysis** — n=10-20로 어떤 effect size를 detect 가능한가. G*Power 시뮬레이션 1쪽 추가. reviewer가 첫 round에서 짚는 약점.
+6. **Wolf triadic switching preference 사전 설문** — 실제 도구 (Qualtrics 또는 LimeSurvey)로 deploy. survey instrument 자체가 reusable.
+7. **References.bib 분리** — 현재 main.tex 안에 인용 정보가 어떻게 들어가 있는지 불명. 표준 .bib 파일로 분리하면 paper portability 향상.
 
 낮은 우선순위:
-10. NIMH RFA-MH-26-195 펀딩 검토 ($3M).
-11. arXiv 대시보드 통합.
-12. 한국어 abstract.
+8. NIMH RFA-MH-26-195 펀딩 검토 ($3M).
+9. 한국어 abstract.
+
+> 배포/제출 관련 할 일 (arXiv endorsement, CHI Workshop proposal 등)은 논증 완성과 별개이므로 `../submissions/assets-2026/NOTES.md` 참조.
 
 ## 4. 학술적 / 시장 가치 (글로벌, 2026-04-11 기준)
 
@@ -103,13 +102,7 @@ b7651a1 Initial commit: Eddy position paper v1.1                        (~2026-0
 - **"Superpower myth" 인식**: paper가 이를 알고 대응하지만, *Barkley/Hinshaw/Faraone* 같은 저명 ADHD researcher가 review에 들어가면 더 강하게 짚을 가능성.
 - **Novelty decay bound** — 1-2주 plateau / 2-4주 decline은 *추정*. 이를 입증하는 inter-session interval 데이터가 paper 안에 0건.
 
-게재 전망:
-- *ASSETS 2026* (Porto, June 24 마감): pilot 데이터 있으면 **realistic 50-60%**. 없으면 short paper / poster 30-40%. position paper만으로는 35%.
-- *CHI 2027* (Workshop): **60-70%**. workshop proposal 자체로 visibility 확보.
-- *CHI 2027* (Full Papers): pilot이 significant interaction 보일 때 50%.
-- *CSCW 2027*: neurodivergent AI interaction 트랙. 50%.
-- *Neuropsychopharmacology* / *Journal of Attention Disorders*: 임상 협력 시 가능.
-- arXiv endorsement만 되면 Zenodo DOI와 함께 즉시 시민 사회 가시성 확보 가능.
+(venue-fit 분석 및 게재 전망은 `../submissions/assets-2026/NOTES.md`로 이동.)
 
 ### 시장 가치: **중상위 (특히 neurodivergent dev community + AI tool vendors에서 강함)**
 
@@ -134,4 +127,4 @@ b7651a1 Initial commit: Eddy position paper v1.1                        (~2026-0
 | Practical applicability | 7/10 | dev tool 광고에 즉시 사용 가능 |
 | **Overall (position paper)** | **7.2/10** | "잘 정리된 hypothesis, 검증만 부족" |
 
-핵심 격언: **"ASSETS 2026 마감(6/24)까지 pilot n=10-20 + arXiv endorsement 두 가지만 추가하면 8.0+로 점프."** position paper로서는 본 survey 21개 중 *완성도 가장 높은* 케이스. 자기 비판이 paper 안에 형식적으로 흡수돼 있어 reviewer 친화적. 단일 저자라는 약점만 임상 공동저자로 보강하면 academic + market 양쪽에서 임팩트 확실.
+핵심 격언: **"pilot n=10-20 + arXiv endorsement 두 가지만 추가하면 8.0+로 점프."** position paper로서는 본 survey 21개 중 *완성도 가장 높은* 케이스. 자기 비판이 paper 안에 형식적으로 흡수돼 있어 reviewer 친화적. 단일 저자라는 약점만 임상 공동저자로 보강하면 academic + market 양쪽에서 임팩트 확실.
