@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+message: "If you reference this work, please cite it as below."
+type: software
+title: "eddy --- ADHD as Competitive Advantage in AI-Augmented Multi-Project Orchestration"
+abstract: >-
+  Position paper proposing that ADHD's rapid stimulus-locking confers a
+  re-engagement speed advantage in AI-augmented multi-session knowledge work,
+  when persistent AI context eliminates the context-reconstruction bottleneck.
+  Four falsifiable hypotheses (TTFA / TTFCA / compound productivity /
+  foraging-mediation), boundary conditions, and a 2x2 pilot study design.
+authors:
+  - family-names: "Yoon"
+    given-names: "Jiyeon"
+    affiliation: "Independent Researcher"
+license: CC-BY-4.0
+repository-code: "https://github.com/heznpc/eddy"
+url: "https://doi.org/10.5281/zenodo.19074337"
+keywords:
+  - ADHD
+  - neurodivergence
+  - human-AI interaction
+  - AI-augmented work
+  - multi-session orchestration
+  - task switching
+  - resumption lag
+  - cognitive offloading
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.19074337"
+    description: "Zenodo concept DOI (resolves to the latest version)"
+preferred-citation:
+  type: article
+  title: "Position: Eddy --- ADHD as Competitive Advantage in AI-Augmented Multi-Project Orchestration"
+  authors:
+    - family-names: "Yoon"
+      given-names: "Jiyeon"
+      affiliation: "Independent Researcher"
+  year: 2026
+  doi: "10.5281/zenodo.19074337"
+  url: "https://doi.org/10.5281/zenodo.19074337"

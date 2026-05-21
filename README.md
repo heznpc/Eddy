@@ -6,6 +6,7 @@ Relationship to other work: Companion to ploidy (Program 2 anchor)
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19074337.svg)](https://doi.org/10.5281/zenodo.19074337)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![Build PDF](https://github.com/heznpc/eddy/actions/workflows/build-pdf.yml/badge.svg?branch=main)](https://github.com/heznpc/eddy/actions/workflows/build-pdf.yml)
 
 **Position: ADHD as Competitive Advantage in AI-Augmented Multi-Project Orchestration**
 
