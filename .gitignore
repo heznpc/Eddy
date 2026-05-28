@@ -18,6 +18,9 @@ TODO.md
 *.fls
 *.fdb_latexmk
 *.synctex.gz
+# biber / biblatex (in case of future migration from BibTeX)
+*.bcf
+*.run.xml
 
 # Local acmart class (fetched for local builds)
 **/acmart.cls

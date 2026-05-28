@@ -1,29 +1,31 @@
 name: Build LaTeX PDF
 
 on:
+  # Build on every PR so the required status check always reports, even when
+  # a PR touches only governance files (README, SECURITY.md, dependabot.yml).
+  # Build is ~1m30s; cheap enough to run as a universal merge gate.
   push:
     branches: [main]
     paths:
       - 'paper/**'
       - '.github/workflows/build-pdf.yml'
   pull_request:
-    paths:
-      - 'paper/**'
-      - '.github/workflows/build-pdf.yml'
   workflow_dispatch:
 
-# Workflow-level default is read-only; jobs/steps opt-in to writes explicitly.
+# Workflow-level default is read-only; jobs opt-in to writes explicitly.
 permissions:
   contents: read
 
 jobs:
   build:
-    name: Compile and (on main push) publish PDF
+    name: build
     runs-on: ubuntu-latest
+    # Build/upload/attest do NOT need contents:write. The auto-commit lives in
+    # a separate downstream job with its own narrowed write scope.
     permissions:
-      contents: write           # required only for the auto-commit step below
-      attestations: write       # required for SLSA build provenance
-      id-token: write           # required for attestation OIDC signing
+      contents: read
+      attestations: write       # SLSA build provenance
+      id-token: write           # OIDC signing for attestations
     steps:
       - name: Checkout
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd  # v6.0.2
@@ -47,8 +49,26 @@ jobs:
         with:
           subject-path: paper/main.pdf
 
+  publish-pdf:
+    name: publish-pdf
+    needs: build
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    # contents:write scoped to this job alone — the only step that uses it
+    # is the git commit/push at the bottom.
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd  # v6.0.2
+
+      - name: Download built PDF
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c  # v8.0.1
+        with:
+          name: eddy-paper
+          path: paper
+
       - name: Commit PDF
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"

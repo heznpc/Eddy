@@ -4,6 +4,7 @@ on:
   push:
     branches: [main]
   pull_request:
+    branches: [main]
   workflow_dispatch:
   schedule:
     # Sunday 04:17 UTC weekly sweep — catches secrets that slipped past push-time scanning.
