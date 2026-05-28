@@ -29,7 +29,8 @@ identifiers:
     value: "10.5281/zenodo.19074337"
     description: "Zenodo concept DOI (resolves to the latest version)"
 preferred-citation:
-  type: article
+  # type "preprint" matches the actual venue (Zenodo deposit), not a peer-reviewed journal article.
+  type: preprint
   title: "Position: Eddy --- ADHD as Competitive Advantage in AI-Augmented Multi-Project Orchestration"
   authors:
     - family-names: "Yoon"
@@ -38,3 +39,6 @@ preferred-citation:
   year: 2026
   doi: "10.5281/zenodo.19074337"
   url: "https://doi.org/10.5281/zenodo.19074337"
+  repository: "https://zenodo.org/records/19074337"
+  institution:
+    name: "Zenodo"
